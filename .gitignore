@@ -41,6 +41,8 @@ nosetests.xml
 .idea
 *.iml
 
+.gradle
+
 .svn
 
 worker_app/settings_dev.py
