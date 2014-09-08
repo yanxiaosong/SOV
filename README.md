@@ -8,7 +8,8 @@ As part of a robust compensation package, employees are given the option to buy 
 
 **Input**: The input consists of a record count N followed by N comma delimited rows. Each row will have 5 fields. The first field will be the word “VEST”. The second field is an arbitrary string representing an individual employee. The third will be the vest date in YYYYMMDD format. The fourth is the amount of units that are vesting. The fifth and final field is the grant price for those options it is a decimal number round to two places – currency is ignored in this case. There is one final input line that consists of a date in YYYYMMDD format and a market price for the stock as at that date.
 
-**Output*: Output will be a three field comma delimited row for each employee (sorted by employee identifier).
+**Output**: Output will be a three field comma delimited row for each employee (sorted by employee identifier).
+
 The first field will be the employee identifier.
 
 The second field will be the total cash gain available for that employee – ignore currency and display as a decimal number rounded to 2 places.
