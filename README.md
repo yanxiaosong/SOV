@@ -58,11 +58,11 @@ If final date was changed to 20130101:
 
 ## Source Code Explained:
 
-stock.Main.java,  entry point of executable jar.
-stock.StockCaculator.java, will read the csv file and run through it.  It plays the role of coordinator, getting the calculation job done.
-stock.StockAccount.java,  account object for stock.  Employee Id will be used as Account Id.  Account is a place to keep all the operations that are performed on it, and account also keeps important data like stock balance,  gain value, sale value and etc.
-stock.Operation.Perf/Sale/Vest/....,  these are definitions of operation that are performed on an account, causing changes to stock balance, gains, sale value, etc..
-stock.Operation.OperationFactory.java,  an object creation factory for Operations.
+* stock.Main.java,  entry point of executable jar.
+* stock.StockCaculator.java, will read the csv file and run through it.  It plays the role of coordinator, getting the calculation job done.
+* stock.StockAccount.java,  account object for stock.  Employee Id will be used as Account Id.  Account is a place to keep all the operations that are performed on it, and account also keeps important data like stock balance,  gain value, sale value and etc.
+* stock.Operation.Perf/Sale/Vest/....,  these are definitions of operation that are performed on an account, causing changes to stock balance, gains, sale value, etc..
+* stock.Operation.OperationFactory.java,  an object creation factory for Operations.
 
 An account can has multiple operations attached to it.  Operations are added to an account and sorted by transaction date.
 
