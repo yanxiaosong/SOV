@@ -1,12 +1,23 @@
 Stock Option Vesting
 ============================
 
+## Overview
 As part of a robust compensation package, employees are given the option to buy stock (a “stock option”) at a favorable set price (the “grant” or “strike” price) after a certain period of time as passed (the “vesting period”) The date that the options are granted is known as the “grant date”, and the date the options are available is known as the “vest date”
 
-Input: The input consists of a record count N followed by N comma delimited rows. Each row will have 5 fields. The first field will be the word “VEST”. The second field is an arbitrary string representing an individual employee. The third will be the vest date in YYYYMMDD format. The fourth is the amount of units that are vesting. The fifth and final field is the grant price for those options it is a decimal number round to two places – currency is ignored in this case. There is one final input line that consists of a date in YYYYMMDD format and a market price for the stock as at that date.
-Output: Output will be a two field comma delimited row for each employee (sorted by employee identifier). The first field will be the employee identifier. The second field will be the total cash gain available for that employee – ignore currency and display as a decimal number rounded to 2 places. Total gain is calculated as market price – grant price. Remember that different rows can have different total gains. Any row with a negative value can be ignored. If an employee does not have anything vested by the date given, they should still appear in the output with a total gain of 0.00. If an employee has a negative net gain (these options would be called “under water”), they should still appear in the output with a total gain of 0.00.
+## Input & Output Format
 
-Define 5 kinds of operations
+**Input**: The input consists of a record count N followed by N comma delimited rows. Each row will have 5 fields. The first field will be the word “VEST”. The second field is an arbitrary string representing an individual employee. The third will be the vest date in YYYYMMDD format. The fourth is the amount of units that are vesting. The fifth and final field is the grant price for those options it is a decimal number round to two places – currency is ignored in this case. There is one final input line that consists of a date in YYYYMMDD format and a market price for the stock as at that date.
+
+**Output*: Output will be a three field comma delimited row for each employee (sorted by employee identifier).
+The first field will be the employee identifier.
+
+The second field will be the total cash gain available for that employee – ignore currency and display as a decimal number rounded to 2 places.
+Total gain is calculated as market price – grant price.
+
+The third field will be total gain through sale.
+
+
+## Definitions: 5 kinds of operations
 
 * VEST: buy stock option at a favorable price.
 
@@ -15,7 +26,7 @@ Define 5 kinds of operations
 * SALE: After options have vested, to realize value, employees can sell their options on the market (they also need to buy them, but that will not be taken into account for this problem).
 
 
-Example:
+## Example:
 
 Input:
 
